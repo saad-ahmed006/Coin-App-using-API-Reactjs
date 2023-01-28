@@ -1,0 +1,52 @@
+.ExchangeItem{
+    width:200px;
+    height:100px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+    padding-bottom: 20px;
+  box-shadow: 17px 18px 28px 5px #888888;
+  border-radius: 5px;
+}
+.ExchangeContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.ExchangeItem img{
+    width: 50px;
+}
+.ExchangeItem h5{
+    text-decoration: none;
+    color:black;
+}
+
+.ExchangeItem h3{
+    text-decoration: none;
+    color:black;
+    margin-bottom: -1rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .ExchangeItem{
+        width:150px;
+        height:100px;
+        margin:1rem 0.2rem 0rem 0.2rem ;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:30px;
+        padding-bottom: 20px;
+      box-shadow:5px 5px 35px 2px #888888;
+      border-radius: 5px;
+    }
+}
