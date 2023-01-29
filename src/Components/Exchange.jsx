@@ -3,9 +3,9 @@ import axios from 'axios'
 import { useEffect } from 'react'
 import { server } from '../index.js'
 import Loader from './Loader.jsx'
-import { Link } from 'react-router-dom'
 import '../Styles/Exchange.css'
-import Error from './Error.js'
+import Error from './Error.jsx'
+import ExchangeCard from '../Components/ExchangeCard'
 export default function Exchanges() {
   const [exchange, setExchange] = useState([])
   const [loading, setLoading] = useState(true)
@@ -47,12 +47,3 @@ export default function Exchanges() {
   )
 }
 
-const ExchangeCard = ({ name, image, rank, url }) => {
-  return (<Link to={url}><div className='ExchangeItem'>
-    <img src={image} alt='coin img'></img>
-    <h3>{rank}</h3>
-    <h5>{name}</h5>
-  </div>
-  </Link>
-  )
-}

@@ -8,6 +8,7 @@ import {
 import Home from './Components/Home';
 import Exchange from './Components/Exchange';
 import Coin from './Components/Coin';
+import CoinDetails from './Components/CoinDetails';
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" element={<Home/>} />
         <Route path="/exchange" element={<Exchange/>} />
         <Route path="/Coin" element={<Coin/>} />
+        <Route path="/Coin/:id" element={<CoinDetails/>} />
       </Routes>
     </Router>
     </>

@@ -1,52 +1,81 @@
-.ExchangeItem{
-    width:200px;
-    height:100px;
-    margin: 1.5rem;
+.ExchangeContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6%;
+  margin-right: 6%;
+  text-decoration-line: none;
+}
+
+.ExchangeItemCont {
+  width: 200px;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ExchangeItem {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+.ExchangeItemCont img {
+  width: 50px;
+  margin: 0rem;
+}
+
+.ExchangeItemCont h5 {
+  color: black;
+  margin: 3px;
+}
+
+.ExchangeItemCont h3 {
+  text-decoration: none;
+  color: black;
+  margin: 2px;
+}
+
+.RadioButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .ExchangeItemCont {
+    width: 150px;
+    height: 100px;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top:30px;
-    padding-bottom: 20px;
-  box-shadow: 17px 18px 28px 5px #888888;
-  border-radius: 5px;
-}
-.ExchangeContainer{
+  }
+
+  .ExchangeItem {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 150px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-left: 6%;
-    margin-right: 6%;
-}
-.ExchangeItem img{
-    width: 50px;
-}
-.ExchangeItem h5{
-    text-decoration: none;
-    color:black;
-}
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+  }
 
-.ExchangeItem h3{
-    text-decoration: none;
-    color:black;
-    margin-bottom: -1rem;
-}
-
-@media screen and (min-width: 0px) and (max-width: 600px) {
-    .ExchangeItem{
-        width:150px;
-        height:100px;
-        margin:1rem 0.2rem 0rem 0.2rem ;
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top:30px;
-        padding-bottom: 20px;
-      box-shadow:5px 5px 35px 2px #888888;
-      border-radius: 5px;
-    }
 }
