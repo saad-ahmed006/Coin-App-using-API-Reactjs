@@ -1,7 +1,10 @@
 import React from 'react'
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 
-export default function Error() {
+export default function Error({ErrorMessage}) {
   return (
-    <div>Error</div>
-  )
+    <Stack sx={{ width: '100%'}} spacing={2}>
+      <Alert severity="error"  >{ErrorMessage}</Alert>
+    </Stack>)
 }

@@ -29,7 +29,7 @@ export default function Coin() {
     GetCoin(`${server}/coins/markets?vs_currency=${currency}`)
   }, [currency])
 
-  if (error) return <Error message={"Error While fetching Coin"} />
+  if (error) return <Error ErrorMessage={"Error While fetching Coin"} />
 
 
   return (
@@ -48,6 +48,7 @@ export default function Coin() {
 
           {coin.map((currElem) => {
             return <CoinCard
+             key={currElem.id}
               id={currElem.id}
               name={currElem.name}
               image={currElem.image}
@@ -55,6 +56,7 @@ export default function Coin() {
               symbol={currElem.symbol}
               currencySymbol={currencySymbol}
               url={currElem.url} />
+              
           })}
 
         </div>

@@ -1,0 +1,94 @@
+.CoinDes {
+  padding-left: 10%;
+}
+.CoinDes img {
+  width: 70px;
+}
+
+.Time{
+  text-align: center;
+}
+.Name{
+  margin-bottom: -40px;
+}
+.low{
+  background-color: #FFCCCB;
+  height: 20px;
+  color: red;
+  text-align: center;
+  border-radius:2px;
+}
+.high{
+  background-color: #D7FFE4;
+  height: 20px;
+  color: green;
+  text-align: center;
+  border-radius:2px;
+}
+.Price{
+  font-size: 18px;
+  margin-bottom: -10px;
+}
+.arrow {
+  border:2px solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 10px;
+}
+
+.down {
+  transform: rotate(45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+}
+
+.rank {
+  background-color: rgb(36, 35, 35);
+  color: white;
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  border-radius: 1px;
+
+}
+
+.ProgressBar {
+  width: 70%;
+}
+
+.ProgressIn24Hours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+.Item {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .CoinDes {
+    padding: 8px;
+  }
+  .ProgressBar {
+    width: 100%;
+  }
+
+  .Item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+  
+  }
+}

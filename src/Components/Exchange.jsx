@@ -26,7 +26,7 @@ export default function Exchanges() {
     GetExchangeCoin(`${server}/exchanges`)
   }, [])
 
-  if (error) return <Error message={"Error While fetching Exchange"} />
+  if (error) return <Error ErrorMessage={"Error While fetching Exchange"} />
 
 
   return (
