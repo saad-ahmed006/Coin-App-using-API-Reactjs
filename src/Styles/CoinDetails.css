@@ -1,5 +1,7 @@
 .CoinDes {
   padding-left: 10%;
+  margin-bottom: 10px;
+
 }
 .CoinDes img {
   width: 70px;
@@ -78,7 +80,9 @@
 @media screen and (min-width: 0px) and (max-width: 500px) {
   .CoinDes {
     padding: 8px;
+
   }
+
   .ProgressBar {
     width: 100%;
   }

@@ -1,0 +1,55 @@
+.Footer {
+    margin-top: -22px;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.Image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Image img {
+    border-radius: 125px;
+    width: 80px;
+}
+
+.Image p {
+    color: white;
+}
+
+.Heading {
+    color: white;
+    width: 30%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Image img {
+        border-radius: 125px;
+        width: 80px;
+    }
+
+    .Image p {
+        color: white;
+    }
+
+    .Heading {
+        color: white;
+        width: 90%;
+        text-align: center;
+    }
+}
