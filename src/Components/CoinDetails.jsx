@@ -75,15 +75,15 @@ export default function CoinDetails() {
           </div>
           <div className='Item'>
             <p>Market Cap</p>
-            <p>{currencySymbol}${coinDetail.market_data.market_cap[currency]}</p>
+            <p>{currencySymbol}{coinDetail.market_data.market_cap[currency]}</p>
           </div>
           <div className='Item'>
             <p>All Time Low</p>
-            <p>{currencySymbol}${coinDetail.market_data.atl[currency]}</p>
+            <p>{currencySymbol}{coinDetail.market_data.atl[currency]}</p>
           </div>
           <div className='Item'>
             <p>All Time Hig</p>
-            <p>{currencySymbol}${coinDetail.market_data.ath[currency]}</p>
+            <p>{currencySymbol}{coinDetail.market_data.ath[currency]}</p>
           </div>
 
         </div>
